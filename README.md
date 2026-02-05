@@ -1,2 +1,3 @@
 # Cafeteira
-Exercicio do Hyperskill, de criar um programa que simula uma cafeteira
+Exercicio do Hyperskill
+Criar um programa que simula uma cafeteira.
