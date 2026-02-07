@@ -11,7 +11,7 @@ public class Cafeteira {
 
         //arrumar o call da classe      
         if (selecaoCafe == 2){
-            Cafes.cafeComleite();
+            Cafes.cafeComLeite();
         }
 
 
