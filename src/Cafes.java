@@ -1,7 +1,15 @@
 public class Cafes {
-    
-    public void cafePuro(){
 
+    int tamanho;
+
+
+    public void cafePuro(){
+        System.out.print("Preparando seu café");Cafeteira.aguarde(); Cafeteira.pularlinha();
+        System.out.print("Moendo grãos de café");   Cafeteira.aguarde(); Cafeteira.pularlinha();
+        System.out.print("Fervendo a água");   Cafeteira.aguarde(); Cafeteira.pularlinha();
+        System.out.print("Misturando a água quente com o café moído");  Cafeteira.aguarde(); Cafeteira.pularlinha();
+        System.out.print("Servindo o café no copo");  Cafeteira.aguarde(); Cafeteira.pularlinha();
+        System.out.print("Seu café com leite está pronto");  Cafeteira.aguarde(); Cafeteira.pularlinha();
 
     }
 
