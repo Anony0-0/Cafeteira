@@ -2,6 +2,7 @@ public class Cafes {
 
     int tamanho;
     float temp;
+    bool espuma;
 
     public void espresso(){
         //https://www.youtube.com/watch?v=hfskQB2CZQE
