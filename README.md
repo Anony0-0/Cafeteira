@@ -7,6 +7,6 @@ Criar um programa que simula uma cafeteira.
 
 1 - Ao abrir o programa,abre uma tela que aparece uma foto da frente de uma cafeteira
 
-<img width="1000" height="1000" alt="image" src="https://github.com/user-attachments/assets/ad047aad-9181-4256-bc86-caf943b24c85" />
+<img width="1000" height="1000" alt="image" src="https://github.com/user-attachments/assets/ad047aad-9181-4256-bc86-caf943b24c85" height="30" />
 
 
