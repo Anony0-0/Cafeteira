@@ -29,7 +29,7 @@ public class Cafeteira {
         } else if (selecaoCafe == 5) {
             Cafes latte = new Cafes();
             latte.latte();
-        } else{ //colocar também que se for uma string, a mesma mensagem aparece
+        } else{ //colocar também que se for uma string, a mesma mensagem aparece / Não mais necessário pq não vai ter mais input de teclado (provavelmente) mas bom ver como faz ainda assim.
             System.out.println("Por favor, selecione uma opção válida");
         }
 
