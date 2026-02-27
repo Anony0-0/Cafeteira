@@ -1,9 +1,14 @@
+import telas.TelaCafeteira;
+import javax.swing.*;
+import java.awt.*;
 import java.util.Scanner;
 
 public class Cafeteira {
     static void main() {
-
         Scanner sc = new Scanner(System.in);
+
+        new TelaCafeteira();
+
 
         System.out.println("Selecione seu café preferido: \n1-Expresso \n2-Café com leite \n3-Mocha\n4-Cappucino\n5-Latte"); pularlinha();
 
@@ -29,8 +34,6 @@ public class Cafeteira {
         }
 
     }
-
-
 
     public static void aguarde() {
         for (int p = 0; p <=2 ; p++){
