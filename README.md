@@ -10,9 +10,16 @@ Criar um programa que simula uma cafeteira.
 
 /exemplo
 <img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/ad047aad-9181-4256-bc86-caf943b24c85" />
-<img width="319" height="518" alt="image" src="https://github.com/user-attachments/assets/bcd09d99-bc94-497d-9c89-3abdd06518a6" />
+<img width="219" height="418" alt="image" src="https://github.com/user-attachments/assets/bcd09d99-bc94-497d-9c89-3abdd06518a6" />
 
 2 - Ao selecionar uma das opções, irá começar a preparar o café selecionado, e então é só aguardar até estiver pronto
 
 
+#Para fazer 
 
+Coisas que eu quero adicionar:
+
+Reservatório de água: a máquina mostra qual a porcentagem de água que ela tem
+quanto está em 30% ela da um aviso que está acabando, e outro aviso quando está vazia.
+
+Por causa dos café que eu adicionei, tem que ter simulação daquele tubinho de espuma
