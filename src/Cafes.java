@@ -1,59 +1,71 @@
+package saboresCafes;
+
 public class Cafes {
 
-    int tamanho;
-    float temp;
-    bool espuma;
+    public enum TiposCafes {
+        ESPRESSO,
+        CAFECOMLEITE,
+        MOCHA,
+        CAPPUCINO;
 
-    public void espresso(){
-        //https://www.youtube.com/watch?v=hfskQB2CZQE
-        System.out.print("Preparando seu café");Cafeteira.aguarde(); Cafeteira.pularlinha();
-        System.out.print("Moendo grãos de café");   Cafeteira.aguarde(); Cafeteira.pularlinha();
-        System.out.print("Fervendo a água");   Cafeteira.aguarde(); Cafeteira.pularlinha();
-        System.out.print("Misturando a água quente com o café moído");  Cafeteira.aguarde(); Cafeteira.pularlinha();
-        System.out.print("Servindo o café no copo");  Cafeteira.aguarde(); Cafeteira.pularlinha();
-        System.out.print("Seu café está pronto!");  Cafeteira.aguarde(); Cafeteira.pularlinha();
+        @Override
+        public String toString() {
+            return name().toLowerCase();
+        }
 
+        public static void aguarde() {
+            for (int p = 0; p <= 2; p++) {
+                System.out.print("." + " ");
+            }
+        }
+
+        public static void pularlinha() {
+            System.out.println();
+        }
+
+        public void prepararBase(TiposCafes tipo) {
+            System.out.println("Preparando seu" + tipo);aguarde();pularlinha();
+            System.out.print("Moendo grãos de café");aguarde();pularlinha();
+            System.out.print("Fervendo a água");aguarde();pularlinha();
+            System.out.print("Misturando a água quente com o café moído");aguarde();pularlinha();
+            System.out.print("Servindo o café no copo");aguarde();pularlinha();
+        }
+
+        public void adicionarLeite() {
+            System.out.println("Colocando leite no seu café.");
+        }
+
+        public void adicionarEspuma() {
+            System.out.println("Adicionando um pouco de espuma.");
+        }
+
+        public void adicionarChocolate() {
+            System.out.println("Colocando um pouco de chocolate cremoso.");
+        }
+
+        public void prepararCafe(TiposCafes tipo) {
+            prepararBase(tipo);
+            switch (tipo) {
+
+                case ESPRESSO:
+                    break;
+
+                case CAFECOMLEITE:
+                    adicionarLeite();
+                    break;
+
+                case MOCHA:
+                    adicionarLeite();
+                    adicionarChocolate();
+                    break;
+
+                case CAPPUCINO:
+                    adicionarLeite();
+                    adicionarEspuma();
+                    break;
+            }
+            System.out.println("Seu" + tipo + "Está pronto");
+
+        }
     }
-
-    public void cafeComLeite(){
-        System.out.print("Preparando seu café com leite");Cafeteira.aguarde(); Cafeteira.pularlinha();
-        System.out.print("Moendo grãos de café");   Cafeteira.aguarde(); Cafeteira.pularlinha();
-        System.out.print("Fervendo a água");   Cafeteira.aguarde(); Cafeteira.pularlinha();
-        System.out.print("Misturando a água quente com o café moído");  Cafeteira.aguarde(); Cafeteira.pularlinha();
-        System.out.print("Servindo o café no copo");  Cafeteira.aguarde(); Cafeteira.pularlinha();
-        System.out.print("Servindo um pouco de leite dentro do copo");  Cafeteira.aguarde(); Cafeteira.pularlinha();
-        System.out.print("Seu café com leite está pronto!");  Cafeteira.aguarde(); Cafeteira.pularlinha();
-    }
-
-    public void mocha(){
-        System.out.print("Preparando seu café mocha");Cafeteira.aguarde(); Cafeteira.pularlinha();
-        System.out.print("Moendo grãos de café");   Cafeteira.aguarde(); Cafeteira.pularlinha();
-        System.out.print("Fervendo a água");   Cafeteira.aguarde(); Cafeteira.pularlinha();
-        System.out.print("Misturando a água quente com o café moído");  Cafeteira.aguarde(); Cafeteira.pularlinha();
-        System.out.print("Servindo o café no copo");  Cafeteira.aguarde(); Cafeteira.pularlinha();
-        System.out.print("Servindo um pouco de leite dentro do copo");  Cafeteira.aguarde(); Cafeteira.pularlinha();
-        System.out.print("Seu café com leite está pronto!");  Cafeteira.aguarde(); Cafeteira.pularlinha();
-
-    }
-    public void capuccino(){
-        System.out.print("Preparando seu café capuccino");Cafeteira.aguarde(); Cafeteira.pularlinha();
-        System.out.print("Moendo grãos de café");   Cafeteira.aguarde(); Cafeteira.pularlinha();
-        System.out.print("Fervendo a água");   Cafeteira.aguarde(); Cafeteira.pularlinha();
-        System.out.print("Misturando a água quente com o café moído");  Cafeteira.aguarde(); Cafeteira.pularlinha();
-        System.out.print("Servindo o café no copo");  Cafeteira.aguarde(); Cafeteira.pularlinha();
-        System.out.print("Servindo um pouco de leite dentro do copo");  Cafeteira.aguarde(); Cafeteira.pularlinha();
-        System.out.print("Seu café com leite está pronto!");  Cafeteira.aguarde(); Cafeteira.pularlinha();
-
-    }
-    public void latte(){
-        System.out.print("Preparando seu café latte");Cafeteira.aguarde(); Cafeteira.pularlinha();
-        System.out.print("Moendo grãos de café");   Cafeteira.aguarde(); Cafeteira.pularlinha();
-        System.out.print("Fervendo a água");   Cafeteira.aguarde(); Cafeteira.pularlinha();
-        System.out.print("Misturando a água quente com o café moído");  Cafeteira.aguarde(); Cafeteira.pularlinha();
-        System.out.print("Servindo o café no copo");  Cafeteira.aguarde(); Cafeteira.pularlinha();
-        System.out.print("Servindo um pouco de leite dentro do copo");  Cafeteira.aguarde(); Cafeteira.pularlinha();
-        System.out.print("Seu café com leite está pronto!");  Cafeteira.aguarde(); Cafeteira.pularlinha();
-    }
-
-
 }
