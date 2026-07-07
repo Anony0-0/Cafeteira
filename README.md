@@ -4,6 +4,10 @@ Projeto do Hyperskill
 Criar um programa que simula uma cafeteira.
 
 
+#Tecnologias Aplicadas
+Linguagem de programação Java, Biblioteca Swing
+Utilização de IA para correção de códigos
+
 -Lógica do programa que estou fazendo
 
 1 - Ao abrir o programa, abre uma tela que mostra a frente de uma cafeteira, com várias opções de café para seleção
