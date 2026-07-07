@@ -23,7 +23,7 @@ Coisas que eu quero adicionar:
 Reservatório de água: a máquina mostra qual a porcentagem de água que ela tem
 quanto está em 30% ela da um aviso que está acabando, e outro aviso quando está vazia.
 
-Com esse sistema ded reservatório de água, quero adicionar botões que mostram os outros lados da cafeteria, pois o reservatório será visto de lado.
+Com esse sistema de reservatório de água, quero adicionar botões que mostram os outros lados da cafeteria, pois o reservatório será visto de lado.
 
 Por causa dos café que eu adicionei, tem que ter simulação daquele tubinho de espuma
 
